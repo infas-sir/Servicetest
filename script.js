@@ -1,5 +1,10 @@
-// My submission for learncssgarden.com challenge
-// === === ===
-// UI Inspired from: https://dribbble.com/afterglow-studio
-// svg icon:........ https://thenounproject.com
-// svg illustration: https://undraw.co/illustrations
+$(function() {
+$('.pop-up').hide();
+$('.pop-up').fadeIn(1000);
+$('.close-button').click(function (e) {
+$('.pop-up').fadeOut(700);
+$('#overlay').removeClass('blur-in');
+$('#overlay').addClass('blur-out');
+e.stopPropagation();
+});
+});
